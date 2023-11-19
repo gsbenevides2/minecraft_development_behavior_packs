@@ -1,0 +1,35 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Mob Reguler",
+    "description": "Mob Reguler",
+    "uuid": "3167496b-c6b9-4992-948f-b72328d60264",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "uuid": "a7abfa85-30fd-4243-bb1d-c20b3ce2366d",
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/Main.js",
+      "description": "Main script",
+      "version": [1, 0, 0]
+    }
+  ],
+  "capabilities": ["script_eval", "experimental_custom_ui"],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.7.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-net",
+      "version": "1.0.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.2.0-beta"
+    }
+  ]
+}

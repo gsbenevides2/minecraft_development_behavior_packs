@@ -1,0 +1,35 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Helper",
+    "description": "Helper",
+    "uuid": "b8ef424d-1d8a-4d9a-8c60-09f5e519e381",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "uuid": "5854d0bc-d72c-44ae-af9b-1482e5e97b39",
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/Main.js",
+      "description": "Main script",
+      "version": [1, 0, 0]
+    }
+  ],
+  "capabilities": ["script_eval", "experimental_custom_ui"],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.7.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-net",
+      "version": "1.0.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.2.0-beta"
+    }
+  ]
+}
