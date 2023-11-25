@@ -6,6 +6,7 @@ import { openSaveCoordinateForm } from "./openSaveCoordinateForm";
 import { openTeleporterForm } from "./openTeleporterForm";
 import { openTimeSetForm } from "./openTimeSetForm";
 import { openWeatherSet } from "./openWeatherSet";
+import { openChangeCoordinateFormName } from "./openChangeCoordinateNameForm";
 
 interface Option {
   name: string;
@@ -27,7 +28,7 @@ const Options: Option[] = [
   {
     name: "Mudar nome de um local salvo",
     icon: "textures/forms/save",
-    callback: () => {},
+    callback: openChangeCoordinateFormName,
   },
   {
     name: "Mudar hora",
