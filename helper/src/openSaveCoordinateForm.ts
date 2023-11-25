@@ -13,17 +13,21 @@ export async function openSaveCoordinateForm(player: Player): Promise<void> {
   } else if (response.formValues?.[0] != null) {
     const name = response.formValues[0] as string;
     const position = player.location;
+    const {x,y,z} = position
+    const playerName = player.nameTag
     api
       .createCoordinate({
         name,
-        x: position.x,
-        y: position.y,
-        z: position.z,
+        x,
+        y,
+        z,
       })
       .then(() => {
         player.sendMessage(`§aLocal ${name} salvo com sucesso!`);
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error(`Ocorreu um erro ao salvar uma coordenada, o player ${playerName} tentou salvar uma coordenada com nome ${name} com as posições ${x} ${y} ${z}. Mas a api resultou no erro:`)
+        console.error(err)
         player.sendMessage(`§cOcorreu um erro ao salvar o local ${name}!`);
       });
   }
