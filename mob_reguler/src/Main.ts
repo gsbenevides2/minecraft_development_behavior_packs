@@ -10,8 +10,8 @@ const pos1 = {
 };
 
 const pos2 = {
-  x: 967,
-  z: 140,
+  x: 933,
+  z: 175,
 };
 
 world.afterEvents.entitySpawn.subscribe((event) => {
