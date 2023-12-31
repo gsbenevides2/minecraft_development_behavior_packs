@@ -1,14 +1,13 @@
 import { type Player } from "@minecraft/server";
 import { ModalFormData } from "@minecraft/server-ui";
-import { ApiFacade } from "./api";
+import { changeCoordinateName, getCoordinates } from "./db";
 
 export async function openChangeCoordinateFormName(
   player: Player,
 ): Promise<void> {
   const form = new ModalFormData();
-  const api = new ApiFacade();
   form.title("Alterar nome de coordenada.");
-  const { data: coordinates } = await api.listCoordinates();
+  const coordinates = await getCoordinates();
   if (coordinates == null) {
     player.sendMessage(
       "§4Por algum motivo desconhecido ocorreu um erro ao recuperar as coordenadas",
@@ -43,14 +42,7 @@ export async function openChangeCoordinateFormName(
   const { x, y, z } = selectedCoordinate;
   const playerName = player.nameTag;
   const oldName = selectedCoordinate.name;
-  await api
-    .updateCoordinate({
-      id: selectedCoordinate.id,
-      name: newName,
-      x,
-      y,
-      z,
-    })
+  changeCoordinateName(selectedCoordinate.id, newName)
     .then(() => {
       player.sendMessage(
         `§aNome da coordenada ${oldName} alterado com sucesso!`,

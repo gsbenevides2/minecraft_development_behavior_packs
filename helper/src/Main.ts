@@ -2,11 +2,9 @@
 import { type Player, world, system } from "@minecraft/server";
 import { ActionFormData, FormCancelationReason } from "@minecraft/server-ui";
 
-import { openSaveCoordinateForm } from "./openSaveCoordinateForm";
 import { openTeleporterForm } from "./openTeleporterForm";
 import { openTimeSetForm } from "./openTimeSetForm";
 import { openWeatherSet } from "./openWeatherSet";
-import { openChangeCoordinateFormName } from "./openChangeCoordinateNameForm";
 
 interface Option {
   name: string;
@@ -19,16 +17,6 @@ const Options: Option[] = [
     name: "Teleportar",
     icon: "textures/items/compass_item",
     callback: openTeleporterForm,
-  },
-  {
-    name: "Salvar local",
-    icon: "textures/items/name_tag",
-    callback: openSaveCoordinateForm,
-  },
-  {
-    name: "Mudar nome de um local salvo",
-    icon: "textures/forms/save",
-    callback: openChangeCoordinateFormName,
   },
   {
     name: "Mudar hora",

@@ -1,0 +1,35 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Teleport",
+    "description": "Teleport",
+    "uuid": "fa00ec36-94ce-4c65-9180-139858882625",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "uuid": "742d1a2a-bb30-4da3-86cd-a512be95e638",
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/Main.js",
+      "description": "Main script",
+      "version": [1, 0, 0]
+    }
+  ],
+  "capabilities": ["script_eval", "experimental_custom_ui"],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.8.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-net",
+      "version": "1.0.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.2.0-beta"
+    }
+  ]
+}

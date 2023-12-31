@@ -1,9 +1,8 @@
 import { type Player } from "@minecraft/server";
 import { ModalFormData } from "@minecraft/server-ui";
-import { ApiFacade } from "./api";
+import { saveCoordinate } from "./db";
 
 export async function openSaveCoordinateForm(player: Player): Promise<void> {
-  const api = new ApiFacade();
   const form = new ModalFormData();
   form.title("Salvar local");
   form.textField("Nome do Local:", "Digite o nome do local aqui");
@@ -15,13 +14,12 @@ export async function openSaveCoordinateForm(player: Player): Promise<void> {
     const position = player.location;
     const { x, y, z } = position;
     const playerName = player.nameTag;
-    api
-      .createCoordinate({
-        name,
-        x,
-        y,
-        z,
-      })
+    saveCoordinate({
+      name,
+      x,
+      y,
+      z,
+    })
       .then(() => {
         player.sendMessage(`§aLocal ${name} salvo com sucesso!`);
       })

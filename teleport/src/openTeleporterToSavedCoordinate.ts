@@ -1,12 +1,11 @@
 import { type Player } from "@minecraft/server";
 import { ModalFormData } from "@minecraft/server-ui";
-import { ApiFacade } from "./api";
+import { getCoordinates } from "./db";
 
 export async function openTeleporterToSavedCoordinateForm(
   player: Player,
 ): Promise<void> {
-  const api = new ApiFacade();
-  const { data: coordinates } = await api.listCoordinates();
+  const coordinates = await getCoordinates();
 
   if (coordinates == null) {
     player.sendMessage("§cOcorreu um erro ao buscar os locais salvos.");
