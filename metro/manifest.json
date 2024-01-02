@@ -1,0 +1,35 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Metro",
+    "description": "Metro",
+    "uuid": "81f81bf8-5fce-4498-8189-77d1220bda79",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "uuid": "87b53eb7-4d43-4f25-b93b-45f36b4043bc",
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/Main.js",
+      "description": "Main script",
+      "version": [1, 0, 0]
+    }
+  ],
+  "capabilities": ["script_eval", "experimental_custom_ui"],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.8.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-net",
+      "version": "1.0.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.2.0-beta"
+    }
+  ]
+}

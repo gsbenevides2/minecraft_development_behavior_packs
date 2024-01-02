@@ -1,0 +1,179 @@
+{
+  "stations": [
+    {
+      "id": "CMT",
+      "name": "Cidade dos Monstros"
+    },
+    {
+      "id": "VQD",
+      "name": "Vila das Orquídeas"
+    },
+    {
+      "id": "CDD",
+      "name": "Cidade Nascimento"
+    }
+  ],
+  "lines": [
+    {
+      "number": 1,
+      "color": "Azul",
+      "stationsIds": [
+        "VQD",
+        "CMT"
+      ]
+    },
+    {
+      "number": 2,
+      "color": "Verde",
+      "stationsIds": [
+        "VQD",
+        "CDD"
+      ]
+    }
+  ],
+  "announcements": [
+    {
+      "code": "002003CMT",
+      "type": "002",
+      "operationalCategory": "003",
+      "operationalStation": "CMT",
+      "text": "Bem vindo a estação: Cidade dos Monstros. Acesso a linha 1 - Azul.",
+      "timestamp": 1704071117122,
+      "updated": true
+    },
+    {
+      "code": "002003VQD",
+      "type": "002",
+      "operationalCategory": "003",
+      "operationalStation": "VQD",
+      "text": "Bem vindo a estação: Vila das Orquídeas. Acessos as linhas: 1 - Azul e 2 - Verde.",
+      "timestamp": 1704071117122,
+      "updated": true
+    },
+    {
+      "code": "002003CDD",
+      "type": "002",
+      "operationalCategory": "003",
+      "operationalStation": "CDD",
+      "text": "Bem vindo a estação: Cidade Nascimento. Acesso a linha 2 - Verde.",
+      "timestamp": 1704071117122,
+      "updated": true
+    },
+    {
+      "code": "002001VQD1",
+      "type": "002",
+      "operationalCategory": "001",
+      "operationalLine": 1,
+      "operationalStation": "VQD",
+      "text": "Próxima estação: Vila das Orquídeas. Acesso a linha 2 - Verde.",
+      "timestamp": 1704071117123,
+      "updated": true
+    },
+    {
+      "code": "002002VQD21",
+      "type": "002",
+      "operationalCategory": "002",
+      "operationalLineWay": "2",
+      "operationalLine": 1,
+      "operationalStation": "VQD",
+      "text": "Estação terminal: Vila das Orquídeas. Acesso a linha 2 - Verde.",
+      "timestamp": 1704071117123,
+      "updated": true
+    },
+    {
+      "code": "002001CMT1",
+      "type": "002",
+      "operationalCategory": "001",
+      "operationalLine": 1,
+      "operationalStation": "CMT",
+      "text": "Próxima estação: Cidade dos Monstros. ",
+      "timestamp": 1704071117123,
+      "updated": true
+    },
+    {
+      "code": "002002CMT11",
+      "type": "002",
+      "operationalCategory": "002",
+      "operationalLineWay": "1",
+      "operationalLine": 1,
+      "operationalStation": "CMT",
+      "text": "Estação terminal: Cidade dos Monstros. ",
+      "timestamp": 1704071117123,
+      "updated": true
+    },
+    {
+      "code": "002001VQD2",
+      "type": "002",
+      "operationalCategory": "001",
+      "operationalLine": 2,
+      "operationalStation": "VQD",
+      "text": "Próxima estação: Vila das Orquídeas. Acesso a linha 1 - Azul.",
+      "timestamp": 1704071117123,
+      "updated": true
+    },
+    {
+      "code": "002002VQD22",
+      "type": "002",
+      "operationalCategory": "002",
+      "operationalLineWay": "2",
+      "operationalLine": 2,
+      "operationalStation": "VQD",
+      "text": "Estação terminal: Vila das Orquídeas. Acesso a linha 1 - Azul.",
+      "timestamp": 1704071117123,
+      "updated": true
+    },
+    {
+      "code": "002001CDD2",
+      "type": "002",
+      "operationalCategory": "001",
+      "operationalLine": 2,
+      "operationalStation": "CDD",
+      "text": "Próxima estação: Cidade Nascimento. ",
+      "timestamp": 1704071117123,
+      "updated": true
+    },
+    {
+      "code": "002002CDD12",
+      "type": "002",
+      "operationalCategory": "002",
+      "operationalLineWay": "1",
+      "operationalLine": 2,
+      "operationalStation": "CDD",
+      "text": "Estação terminal: Cidade Nascimento. ",
+      "timestamp": 1704071117123,
+      "updated": true
+    },
+    {
+      "code": "00169344",
+      "type": "001",
+      "institucionalNumber": 69344,
+      "text": "Obrigada pela sua visita! Volte sempre!",
+      "updated": true,
+      "timestamp": 1704151967001
+    },
+    {
+      "code": "00124521",
+      "type": "001",
+      "institucionalNumber": 24521,
+      "text": "Não atrapalhe a circulação de carrinhos. Caso não vá desembarcar na próxima estação, não fique parado na via. Caso vá desembarcar, remova seu carrinho da via. E em estação terminal o desembarque é obrigatório.",
+      "updated": true,
+      "timestamp": 1704152138507
+    },
+    {
+      "code": "00128500",
+      "type": "001",
+      "institucionalNumber": 28500,
+      "text": "Evite acidentes! Não ande no contrafluxo. Obedeça à sinalização das estações e vias.",
+      "updated": true,
+      "timestamp": 1704152203417
+    },
+    {
+      "code": "00170492",
+      "type": "001",
+      "institucionalNumber": 70492,
+      "text": "Vandalismo é crime! Não furte ou danifique estações e equipamentos de via. A pena pode ser de suspensão temporária a permanente.",
+      "updated": true,
+      "timestamp": 1704152276039
+    }
+  ]
+}
